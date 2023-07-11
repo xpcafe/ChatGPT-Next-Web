@@ -117,10 +117,10 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          ChatGPT Next
+          ChatGPT
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+          AI客服个人助手
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -135,13 +135,13 @@ export function SideBar(props: { className?: string }) {
           onClick={() => navigate(Path.NewChat, { state: { fromHome: true } })}
           shadow
         />
-        <IconButton
+        /**<IconButton
           icon={<PluginIcon />}
           text={shouldNarrow ? undefined : Locale.Plugin.Name}
           className={styles["sidebar-bar-button"]}
           onClick={() => showToast(Locale.WIP)}
           shadow
-        />
+        />**/
       </div>
 
       <div
